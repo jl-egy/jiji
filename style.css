@@ -1,0 +1,91 @@
+/* Common Styles */
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* Replace with the actual image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6); /* Fallback background color */
+}
+
+.container {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Message Wall Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.message-wall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.message-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.message-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.message-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.message-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Link to Gallery Button */
+.link-to-gallery {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.link-to-gallery .button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.link-to-gallery .button:hover {
+    background-color: #45a049;
+}
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+    .message-wall {
+        flex-direction: column;
+        align-items: center;
+    }
+}
